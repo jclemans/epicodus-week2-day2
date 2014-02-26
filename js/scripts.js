@@ -68,13 +68,15 @@ $(document).ready(function() {
       newAddress.state = inputtedState;
 
       console.log(newAddress.validCheck());
-      console.log(newAddress.street);
+
 
       if (newAddress.validCheck()) {
         newContact.addresses.push(newAddress);   
       } else {
         alert("Invalid Address.");
       }
+
+      console.log(newContact.phones);
 
     });
 
